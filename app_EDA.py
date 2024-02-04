@@ -1,17 +1,19 @@
 #Import required libraries
 import os 
-from apikey import apikey 
+#from apikey import apikey 
 
 import streamlit as st
 import pandas as pd
 
 from langchain.llms import OpenAI
 from langchain.agents import create_pandas_dataframe_agent
-from dotenv import load_dotenv, find_dotenv
+#from dotenv import load_dotenv, find_dotenv
 
 #OpenAIKey
-os.environ['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'] = apikey
-load_dotenv(find_dotenv())
+#os.environ['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'] = apikey
+#load_dotenv(find_dotenv())
+
+os.environ["OPENAI_API_KEY"] = "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"
 
 #Title
 st.title('AI Assistant for Data Science 🤖')
